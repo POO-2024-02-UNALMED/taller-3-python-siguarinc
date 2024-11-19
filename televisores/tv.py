@@ -1,6 +1,5 @@
 from __future__ import annotations
 from televisores.marca import Marca
-from televisores.control import Control
 class TV:
     _numTV=0
     def __init__(self, marca, estado):
@@ -45,6 +44,14 @@ class TV:
     
     def setControl(self, c):
         self._control= c
+    
+    @classmethod
+    def setNumTV(cls,nt):
+        cls._numTV=nt
+        
+    @classmethod
+    def getNumTV(cls):
+        return cls._numTV
 
     def turnOn(self):
         self._estado=True
@@ -75,12 +82,7 @@ class TV:
             if(self._volumen>0 and self._volumen<=7):
                 self._volumen-=1
 
-    @classmethod
-    def setNumTV(cls,nt):
-        cls._numTV=nt
-    @classmethod
-    def getNumTV(cls):
-        return cls._numTV
+    
     
     
 
