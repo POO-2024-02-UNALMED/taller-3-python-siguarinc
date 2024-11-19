@@ -1,4 +1,3 @@
-from __future__ import annotations
 class Marca:
     def __init__(self,nombre):
         self._nombre=nombre

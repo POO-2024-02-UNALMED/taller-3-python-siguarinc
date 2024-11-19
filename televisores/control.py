@@ -1,7 +1,6 @@
-from __future__ import annotations
 from televisores.tv import TV
 class Control:
-    def __init__(self,tv):
+    def __init__(self):
         self._tv=None
 
     def enlazar(self,tv):
