@@ -1,3 +1,4 @@
+from __future__ import annotations
 from televisores.marca import Marca
 from televisores.control import Control
 class TV:

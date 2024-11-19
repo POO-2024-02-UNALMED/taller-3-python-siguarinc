@@ -1,3 +1,4 @@
+from __future__ import annotations
 from televisores.tv import TV
 class Control:
     def __init__(self):
